@@ -1,5 +1,11 @@
 # Useful configurations &amp; administrative scripts for Linux systems
 
-## usbhub-wakeup
+## 99-user-custom.rules
 
-udev script configuration to enable standby wakeup for USB hubs, in case an sleep-capable USB device (e.g. keyboard) is attached to a USB hub.
+### 1c4f:0002 (Renkforce RF-KB-300)
+
+#### Issues
+Randomly disconnects on Ubuntu 24.04 (x86_64; Kernel 6.8.0).
+
+#### Mitigation
+Disable USB autosuspend to mitigate random USB disconnects.
